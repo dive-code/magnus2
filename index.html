@@ -55,22 +55,23 @@
 
     .btn-join {
       display: inline-block;
-      padding: 25px 50px;
-      font-size: clamp(20px, 5vw, 26px);
+      padding: 35px 70px;
+      font-size: clamp(26px, 6vw, 34px);
       font-weight: 900;
       color: #fff;
       background: linear-gradient(90deg, #28a745, #1e7e34);
       border: none;
-      border-radius: 12px;
+      border-radius: 16px;
       text-decoration: none;
       cursor: pointer;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
       transition: all 0.3s ease;
-      margin: 50px 0;
+      margin: 60px 0;
+      text-transform: uppercase;
     }
 
     .btn-join:hover {
-      transform: scale(1.05);
+      transform: scale(1.08);
       background: linear-gradient(90deg, #34d058, #1e7e34);
     }
 
@@ -98,8 +99,9 @@
 
   <div class="block">Click below to enter the training:</div>
 
-  <!-- ✅ Added tracking for Join Button -->
+  <!-- ✅ Join Button -->
   <a href="https://chat.whatsapp.com/FHsFMxZuDEyETzZUyM1JyS?mode=wwt"
+     class="btn-join"
      onclick="ttq.track('ClickButton', {content_name: 'Join Session'});">
      🔥 JOIN THE SESSION NOW 🔥
   </a>
@@ -110,14 +112,9 @@
   </div>
 
   <div class="footer-note">
-    You do not need to install any application, just click the button above and connect with your phone.
-  </div>
-
-  <div class="footer-note">
     <strong>P.S:</strong> If you close this page right now without joining the training, your seat 
     may be given to another person and you’ll miss the opportunity.
   </div>
 
 </body>
 </html>
-
